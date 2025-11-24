@@ -1,6 +1,12 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import astroImg from '../../assets/sadhu.png'
+import whychooseus from '../../assets/whychooseus.jpeg'
+import whychooseus1 from '../../assets/whychooseus1.jpeg'
+import whychooseus2 from '../../assets/whychooseus2.jpeg'
+import allcoursesImg from '../../assets/Allcourses.jpeg'
+import formImg from '../../assets/form-girl.jpeg'
+import WhatsappIcone from '../layout/WhatsappIcone'
 
 const Home = () => {
   const canvasRef = useRef(null)
@@ -9,6 +15,7 @@ const Home = () => {
   const pointsRef = useRef([])
   const targetRef = useRef({ x: 0, y: 0 })
   const animateHeaderRef = useRef(true)
+  const [shadowColors, setShadowColors] = useState({ color1: 146, color2: 218, color3: 156, color4: 255 })
 
   useEffect(() => {
     let width = window.innerWidth
@@ -233,12 +240,40 @@ const Home = () => {
     }
   }, [])
 
+  // Animate shadow colors
+  useEffect(() => {
+    let colorAnimationRef = null
+    let time = 0
+
+    const animateColors = () => {
+      time += 0.01
+      
+      // Create smooth color transitions using sine waves
+      const color1 = Math.floor(146 + 50 * Math.sin(time))
+      const color2 = Math.floor(218 + 30 * Math.sin(time + Math.PI / 2))
+      const color3 = Math.floor(156 + 50 * Math.sin(time + Math.PI))
+      const color4 = Math.floor(255 + 30 * Math.sin(time + 3 * Math.PI / 2))
+      
+      setShadowColors({ color1, color2, color3, color4 })
+      
+      colorAnimationRef = requestAnimationFrame(animateColors)
+    }
+
+    animateColors()
+
+    return () => {
+      if (colorAnimationRef) {
+        cancelAnimationFrame(colorAnimationRef)
+      }
+    }
+  }, [])
+
   return (
     <>
       <div
         id="large-header"
         ref={headerRef}
-        className="large-header  relative w-full bg-[#180326] overflow-hidden bg-cover bg-center z-10"
+        className="large-header  relative w-full bg-[#fff] overflow-hidden bg-cover bg-center z-10"
         style={{
           backgroundImage: "url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg')"
         }}
@@ -256,7 +291,7 @@ const Home = () => {
               
               {/* Button */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to="/courses" className="bg-[#92487A] border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+                <Link to="/all-courses" className="bg-[#92487A] border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
                   <span>Explore Courses</span>
                   <i className="fas fa-arrow-right"></i>
                 </Link>
@@ -270,7 +305,12 @@ const Home = () => {
                 <img
                   src={astroImg}
                   alt="Astro Radiance Vidhya"
-                  className="w-full h-auto object-contain rounded-lg shadow-2xl"
+                  className="w-full h-auto object-contain rounded-lg"
+                  style={{
+                    filter: `drop-shadow(0 0 20px rgba(${shadowColors.color1}, 72, 122, 0.8)) drop-shadow(0 0 30px rgba(${shadowColors.color2}, 100, 34, 0.6)) drop-shadow(0 0 40px rgba(${shadowColors.color3}, 217, 249, 0.5)) drop-shadow(0 0 50px rgba(${shadowColors.color4}, 100, 150, 0.4))`,
+                    WebkitFilter: `drop-shadow(0 0 20px rgba(${shadowColors.color1}, 72, 122, 0.8)) drop-shadow(0 0 30px rgba(${shadowColors.color2}, 100, 34, 0.6)) drop-shadow(0 0 40px rgba(${shadowColors.color3}, 217, 249, 0.5)) drop-shadow(0 0 50px rgba(${shadowColors.color4}, 100, 150, 0.4))`,
+                    transition: 'filter 0.1s ease-out'
+                  }}
                 />
               </div>
             </div>
@@ -405,7 +445,7 @@ const Home = () => {
           {/* View All Courses Button */}
           <div className="text-center mt-12">
             <Link
-              to="/courses"
+              to="/all-courses"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#DA6422] to-[#DA6422] text-white px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
             >
               <span>View All Courses</span>
@@ -414,6 +454,335 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 sm:py-20 lg:py-10 bg-gray-100 relative overflow-hidden">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-4xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Why Choose Academy of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Astro Radiance Vidhya</span>?
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+              We are committed to providing the best learning experience in Vedic and Occult Sciences
+            </p>
+          </div>
+
+          {/* Two Column Layout: Image Left, Features Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Side - Image Collage (3 Images) */}
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+              <div className="relative w-full max-w-lg">
+                {/* Image Collage Grid */}
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Large Image - Top Left (spans 2 columns) */}
+                  <div className="col-span-2 relative rounded-2xl overflow-hidden shadow-2xl group h-64">
+                    <img
+                      src={whychooseus1}
+                      alt="Education Academy"
+                      className="w-full h-full object-cover rounded-2xl group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#92487A]/30 to-transparent"></div>
+                  </div>
+                  
+                  {/* Small Image 1 - Bottom Left */}
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl group h-48">
+                    <img
+                      src={whychooseus}
+                      alt="Astro Radiance"
+                      className="w-full h-full object-cover rounded-2xl group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#DA6422]/30 to-transparent"></div>
+                  </div>
+                  
+                  {/* Small Image 2 - Bottom Right */}
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl group h-48">
+                    <img
+                      src={whychooseus2}
+                      alt="All Courses"
+                      className="w-full h-full object-cover rounded-2xl group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#92487A]/30 to-transparent"></div>
+                  </div>
+                </div>
+                
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#DA6422] rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#92487A] rounded-full opacity-20 blur-2xl"></div>
+              </div>
+            </div>
+
+            {/* Right Side - Features List */}
+            <div className="order-1 lg:order-2">
+              <div className="space-y-10 md:space-y-12">
+                {/* Feature 1 */}
+                <div className="flex items-start gap-6 group">
+                  <div className="flex-shrink-0 relative">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                      <i className="fas fa-certificate text-4xl text-white"></i>
+                    </div>
+                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#DA6422] rounded-full opacity-75 animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                      Globally Recognized Certificates
+                    </h3>
+                    <p className="text-base text-gray-600 leading-relaxed">
+                      Receive internationally recognized certificates upon course completion that enhance your professional credibility.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 2 */}
+                <div className="flex items-start gap-6 group">
+                  <div className="flex-shrink-0 relative">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                      <i className="fas fa-chalkboard-teacher text-4xl text-white"></i>
+                    </div>
+                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#92487A] rounded-full opacity-75 animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                      Expert Instructors
+                    </h3>
+                    <p className="text-base text-gray-600 leading-relaxed">
+                      Learn from experienced masters and practitioners with years of expertise in Vedic and Occult Sciences.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 3 */}
+                <div className="flex items-start gap-6 group">
+                  <div className="flex-shrink-0 relative">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                      <i className="fas fa-laptop text-4xl text-white"></i>
+                    </div>
+                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#DA6422] rounded-full opacity-75 animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                      Flexible Learning
+                    </h3>
+                    <p className="text-base text-gray-600 leading-relaxed">
+                      Study at your own pace with our flexible online courses designed to fit your busy schedule.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 4 */}
+                <div className="flex items-start gap-6 group">
+                  <div className="flex-shrink-0 relative">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                      <i className="fas fa-hands-helping text-4xl text-white"></i>
+                    </div>
+                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#92487A] rounded-full opacity-75 animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                      Lifetime Support
+                    </h3>
+                    <p className="text-base text-gray-600 leading-relaxed">
+                      Get lifetime access to course materials and ongoing support from our community of learners and experts.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature 5 */}
+                {/* <div className="flex items-start gap-6 group">
+                  <div className="flex-shrink-0 relative">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                      <i className="fas fa-book-open text-4xl text-white"></i>
+                    </div>
+                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#DA6422] rounded-full opacity-75 animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#DA6422] transition-colors duration-300">
+                      Comprehensive Curriculum
+                    </h3>
+                    <p className="text-base text-white/80 leading-relaxed">
+                      Access well-structured courses covering both theoretical knowledge and practical applications.
+                    </p>
+                  </div>
+                </div> */}
+
+                {/* Feature 6 */}
+                {/* <div className="flex items-start gap-6 group">
+                  <div className="flex-shrink-0 relative">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                      <i className="fas fa-users text-4xl text-white"></i>
+                    </div>
+                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#92487A] rounded-full opacity-75 animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#DA6422] transition-colors duration-300">
+                      Thriving Community
+                    </h3>
+                    <p className="text-base text-white/80 leading-relaxed">
+                      Join a vibrant community of like-minded learners and practitioners passionate about Vedic sciences.
+                    </p>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Take Your Next Step Section */}
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Side - Heading and Image */}
+            <div className="flex flex-col justify-center lg:justify-start order-2 lg:order-1 h-full">
+              {/* Main Heading */}
+              <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center lg:text-left">
+                Take Your Next Step Towards <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Vedic Science</span>
+              </h2>
+              
+              {/* Image */}
+              <div className="relative w-full max-w-lg mx-auto lg:mx-0">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[600px] lg:min-h-[700px]">
+                  <img
+                    src={formImg}
+                    alt="Vedic Science"
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#92487A]/20 to-transparent"></div>
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#DA6422] rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#92487A] rounded-full opacity-20 blur-2xl"></div>
+              </div>
+            </div>
+
+            {/* Right Side - Form */}
+            <div className="order-1 lg:order-2">
+              <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+                <p className="text-gray-600 mb-6">
+                  Fill out the form below and our team will get back to you soon.
+                </p>
+                
+                <form className="space-y-5">
+                  {/* First Name and Last Name - Side by Side */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {/* First Name Field */}
+                    <div>
+                      <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-2">
+                        First Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        placeholder="Enter first name"
+                      />
+                    </div>
+
+                    {/* Last Name Field */}
+                    <div>
+                      <label htmlFor="lastName" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Last Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        placeholder="Enter last name"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email and Phone - Side by Side */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {/* Email Field */}
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Email Address <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+
+                    {/* Phone Field */}
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Phone Number <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        placeholder="Enter phone number"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Course Interest Field */}
+                  <div>
+                    <label htmlFor="course" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Course of Interest
+                    </label>
+                    <select
+                      id="course"
+                      name="course"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                    >
+                      <option value="">Select a course</option>
+                      <option value="vedic-astrology">Vedic Astrology</option>
+                      <option value="vedic-numerology">Vedic Numerology</option>
+                      <option value="vastu-shastra">Vastu Shastra</option>
+                      <option value="palmistry">Palmistry</option>
+                      <option value="crystal-healing">Crystal Healing</option>
+                      <option value="tarot-reading">Tarot Card Reading</option>
+                      <option value="reiki-healing">Reiki Healing</option>
+                      <option value="feng-shui">Feng Shui</option>
+                      <option value="meditation">Meditation & Mindfulness</option>
+                    </select>
+                  </div>
+
+                  {/* Message Field */}
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300 resize-none"
+                      placeholder="Tell us about your interest in Vedic Science..."
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-[#92487A] to-[#DA6422] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform flex items-center justify-center space-x-2"
+                  >
+                    <span>Submit</span>
+                    <i className="fas fa-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WhatsApp Icon - Fixed at bottom left */}
+      <WhatsappIcone />
     </>
   )
 }

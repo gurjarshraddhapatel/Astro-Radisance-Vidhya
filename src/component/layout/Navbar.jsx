@@ -34,10 +34,10 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/courses"
+              to="/all-courses" 
               className="text-[#f9f1e9] hover:text-primary-blue-400 transition-colors duration-200 font-medium py-2"
             >
-              Courses
+              All Courses 
             </Link>
             <Link
               to="/important-links"
