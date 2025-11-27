@@ -170,9 +170,15 @@ const Allcourses = () => {
           {/* Courses Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {courses.map((course) => (
-              <div
+              <Link
                 key={course.id}
-                className={`bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#92487A] transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative overflow-hidden ${course.comingSoon ? 'opacity-90' : ''}`}
+                to={course.comingSoon ? '#' : `/course/${course.id}`}
+                className={`block bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#92487A] transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group relative overflow-hidden ${course.comingSoon ? 'opacity-90 cursor-default' : 'cursor-pointer'}`}
+                onClick={(e) => {
+                  if (course.comingSoon) {
+                    e.preventDefault()
+                  }
+                }}
               >
                 {/* Coming Soon Badge */}
                 {course.comingSoon && (
@@ -217,21 +223,18 @@ const Allcourses = () => {
 
                   {/* Learn More / Coming Soon Button */}
                   {course.comingSoon ? (
-                    <div className="inline-flex items-center justify-center w-full space-x-2 bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold text-sm cursor-not-allowed">
+                    <div className="inline-flex items-center justify-center w-full space-x-2 bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold text-sm cursor-not-allowed pointer-events-none">
                       <span>Coming Soon</span>
                       <i className="fas fa-clock"></i>
                     </div>
                   ) : (
-                    <Link
-                      to={course.link}
-                      className="inline-flex items-center justify-center w-full space-x-2 bg-gradient-to-r from-[#92487A] to-[#DA6422] text-white px-6 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-all duration-300 group-hover:shadow-lg transform group-hover:scale-105"
-                    >
+                    <div className="inline-flex items-center justify-center w-full space-x-2 bg-gradient-to-r from-[#92487A] to-[#DA6422] text-white px-6 py-3 rounded-lg font-semibold text-sm group-hover:shadow-lg transform group-hover:scale-105 transition-all duration-300">
                       <span>Learn More</span>
                       <i className="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                    </Link>
+                    </div>
                   )}
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

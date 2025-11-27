@@ -5,6 +5,7 @@ import './App.css'
 import Home from './component/pages/Home'
 import Allcourses from './component/pages/Allcourses'
 import Affiliate from './component/pages/Affiliate'
+import CourseInnerpage from './component/pages/CourseInnerpage'
 import CartProvider from './context/CartContext'
 import Navbar from './component/layout/Navbar'
 import Footer from './component/layout/Footer'
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/all-courses" element={<Allcourses />} />
           <Route path="/affiliate" element={<Affiliate />} />
+          <Route path="/course/:courseId" element={<CourseInnerpage />} />
           
           {/* Public Routes with Navbar/Footer */}
           

@@ -18,6 +18,7 @@ const Home = () => {
   const [shadowColors, setShadowColors] = useState({ color1: 146, color2: 218, color3: 156, color4: 255 })
   const [currentReview, setCurrentReview] = useState(0)
   const [cardsPerView, setCardsPerView] = useState(3)
+  const featuredCarouselRef = useRef(null)
 
   // Update cards per view based on screen size
   useEffect(() => {
@@ -759,7 +760,7 @@ const Home = () => {
           </div>
 
           {/* Reviews Carousel - Modern Design */}
-          <div className="relative pb-10">
+          <div className="relative pb-10">  . 
             {/* Carousel Container with Perspective */}
             <div className="relative h-[600px] sm:h-[500px] lg:h-[400px] overflow-visible">
               <div className="flex items-center justify-center h-full">
@@ -947,6 +948,153 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Featured On Section */}
+      <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontWeight: 600 }}>
+              Featured <span style={{ color: '#92487A', fontWeight: 600 }}>On</span>
+            </h2>
+          </div>
+      <section className="py-16 sm:py-20 lg:py-16  bg-gradient-to-br from-[#92487A] via-[#92487A] to-[#DA6422]  relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#DA6422] rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         
+
+          {/* Auto-Scrolling Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex gap-6 md:gap-8 overflow-hidden">
+              <div 
+                className="flex gap-6 md:gap-8 animate-scroll"
+                style={{
+                  animation: 'scroll 30s linear infinite',
+                  width: 'fit-content'
+                }}
+              >
+                {/* Featured Media Outlets */}
+                {[
+                  {
+                    name: "Women Entrepreneur India",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Women-Entrepreneur-India-_-https___www_womenentrepreneurindia_com_editors-guest-column_dyn.png",
+                    link: "https://www.womenentrepreneurindia.com/editors-guest-column/dyn"
+                  },
+                  {
+                    name: "SugerMint",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/SugerMint-_-https___sugermint_com_diksha-katyal.png",
+                    link: "https://sugermint.com/diksha-katyal"
+                  },
+                  {
+                    name: "APN News",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/APN-News-_-https___www_apnnews_com_academy-of-vedic-vidya-introduces-unique-courses-in-ved.png",
+                    link: "https://www.apnnews.com/academy-of-vedic-vidya-introduces-unique-courses-in-ved"
+                  },
+                  {
+                    name: "Biz News Desk",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Biz-News-Desk-_-https___biznewsdesk_com_education_academy-of-vedic-vidya-introduces-unique.png",
+                    link: "https://biznewsdesk.com/education/academy-of-vedic-vidya-introduces-unique"
+                  },
+                  {
+                    name: "India Education Diary",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/India-Education-Diary-_-https___indiaeducationdiary_in_academy-of-vedic-vidya-introduces-u.png",
+                    link: "https://indiaeducationdiary.in/academy-of-vedic-vidya-introduces-u"
+                  },
+                  {
+                    name: "Dainik Bhaskar UP",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Dainik-Bhaskar-UP-httpsepaper_dainikbhaskarup_commedia2023-0864e423d103b17-noida_s11_jpg-.png",
+                    link: "https://epaper.dainikbhaskarup.com/media/2023-08/64e423d103b17-noida_s11.jpg"
+                  }
+                ].map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] h-[120px] sm:h-[140px] md:h-[150px] flex items-center justify-center bg-white rounded-lg p-3 sm:p-4 hover:shadow-xl transition-all duration-300 border border-gray-100"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      loading="lazy"
+                    />
+                  </a>
+                ))}
+                {/* Duplicate set for seamless infinite scroll */}
+                {[
+                  {
+                    name: "Women Entrepreneur India",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Women-Entrepreneur-India-_-https___www_womenentrepreneurindia_com_editors-guest-column_dyn.png",
+                    link: "https://www.womenentrepreneurindia.com/editors-guest-column/dyn"
+                  },
+                  {
+                    name: "SugerMint",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/SugerMint-_-https___sugermint_com_diksha-katyal.png",
+                    link: "https://sugermint.com/diksha-katyal"
+                  },
+                  {
+                    name: "APN News",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/APN-News-_-https___www_apnnews_com_academy-of-vedic-vidya-introduces-unique-courses-in-ved.png",
+                    link: "https://www.apnnews.com/academy-of-vedic-vidya-introduces-unique-courses-in-ved"
+                  },
+                  {
+                    name: "Biz News Desk",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Biz-News-Desk-_-https___biznewsdesk_com_education_academy-of-vedic-vidya-introduces-unique.png",
+                    link: "https://biznewsdesk.com/education/academy-of-vedic-vidya-introduces-unique"
+                  },
+                  {
+                    name: "India Education Diary",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/India-Education-Diary-_-https___indiaeducationdiary_in_academy-of-vedic-vidya-introduces-u.png",
+                    link: "https://indiaeducationdiary.in/academy-of-vedic-vidya-introduces-u"
+                  },
+                  {
+                    name: "Dainik Bhaskar UP",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Dainik-Bhaskar-UP-httpsepaper_dainikbhaskarup_commedia2023-0864e423d103b17-noida_s11_jpg-.png",
+                    link: "https://epaper.dainikbhaskarup.com/media/2023-08/64e423d103b17-noida_s11.jpg"
+                  }
+                ].map((item, index) => (
+                  <a
+                    key={`duplicate-${index}`}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] h-[120px] sm:h-[140px] md:h-[150px] flex items-center justify-center bg-white rounded-lg p-3 sm:p-4 hover:shadow-xl transition-all duration-300 border border-gray-100"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      loading="lazy"
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CSS Animation for Auto-Scroll */}
+        <style>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scroll {
+            animation: scroll 30s linear infinite;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       {/* Take Your Next Step Section */}
