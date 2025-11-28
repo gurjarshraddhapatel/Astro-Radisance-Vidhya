@@ -247,7 +247,7 @@ const CourseInnerpage = () => {
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Course Not Found</h1>
-          <Link to="/all-courses" className="text-[#92487A] hover:underline">
+          <Link to="/all-courses" className="text-[#540863] hover:underline">
             Back to All Courses
           </Link>
         </div>
@@ -260,7 +260,7 @@ const CourseInnerpage = () => {
       {/* Hero Section with Particle Animation */}
       <div
         ref={headerRef}
-        className="relative w-full bg-gradient-to-br from-[#92487A] via-[#92487A] to-[#DA6422] overflow-hidden"
+        className="relative w-full bg-gradient-to-br from-[#540863] via-[#540863] to-[#92487A] overflow-hidden"
       >
         <canvas ref={canvasRef} className="absolute inset-0 z-0"></canvas>
         
@@ -298,7 +298,7 @@ const CourseInnerpage = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-white text-[#92487A] px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+                <button className="bg-white text-[#540863] px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
                   Enroll Now
                 </button>
                 <Link
@@ -314,31 +314,31 @@ const CourseInnerpage = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="bg-white rounded-3xl p-8 shadow-2xl max-w-md w-full">
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-[#92487A] mb-2">{course.price}</div>
+                  <div className="text-4xl font-bold text-[#540863] mb-2">{course.price}</div>
                   <div className="text-lg text-gray-500 line-through">{course.originalPrice}</div>
                   <div className="text-sm text-green-600 font-semibold mt-2">Save ₹{(parseInt(course.originalPrice.replace('₹', '').replace(',', '')) - parseInt(course.price.replace('₹', '').replace(',', ''))).toLocaleString('en-IN')}</div>
                 </div>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center gap-3">
-                    <i className="fas fa-check-circle text-[#92487A]"></i>
+                    <i className="fas fa-check-circle text-[#540863]"></i>
                     <span className="text-gray-700">Lifetime Access</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <i className="fas fa-check-circle text-[#92487A]"></i>
+                    <i className="fas fa-check-circle text-[#540863]"></i>
                     <span className="text-gray-700">Certificate of Completion</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <i className="fas fa-check-circle text-[#92487A]"></i>
+                    <i className="fas fa-check-circle text-[#540863]"></i>
                     <span className="text-gray-700">1-on-1 Mentorship</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <i className="fas fa-check-circle text-[#92487A]"></i>
+                    <i className="fas fa-check-circle text-[#540863]"></i>
                     <span className="text-gray-700">100% Live Online Classes</span>
                   </div>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-[#92487A] to-[#DA6422] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+                <button className="w-full bg-gradient-to-r from-[#540863] to-[#92487A] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
                   Enroll Now
                 </button>
               </div>
@@ -351,19 +351,19 @@ const CourseInnerpage = () => {
       <section className="py-16 sm:py-20 lg:py-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 right-10 w-72 h-72 bg-[#92487A] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#DA6422] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-[#540863] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block mb-4">
-              <span className="text-sm font-semibold text-[#92487A] uppercase tracking-wider bg-[#92487A]/10 px-4 py-2 rounded-full">
+              <span className="text-sm font-semibold text-[#540863] uppercase tracking-wider bg-[#540863]/10 px-4 py-2 rounded-full">
                 Course Outcomes
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              What You'll <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Learn</span>
+              What You'll <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#92487A]">Learn</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Master essential skills and knowledge through our comprehensive curriculum
@@ -379,16 +379,16 @@ const CourseInnerpage = () => {
                 'fas fa-lightbulb'
               ]
               const gradients = [
-                'from-[#92487A] to-[#DA6422]',
-                'from-[#DA6422] to-[#92487A]',
-                'from-[#92487A] to-[#DA6422]',
-                'from-[#DA6422] to-[#92487A]'
+                'from-[#540863] to-[#92487A]',
+                'from-[#92487A] to-[#540863]',
+                'from-[#540863] to-[#92487A]',
+                'from-[#92487A] to-[#540863]'
               ]
               
               return (
                 <div 
                   key={index} 
-                  className="group relative bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-[#92487A]/30 overflow-hidden"
+                  className="group relative bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-[#540863]/30 overflow-hidden"
                 >
                   {/* Animated Background Gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${gradients[index % gradients.length]} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
@@ -404,23 +404,23 @@ const CourseInnerpage = () => {
                     
                     {/* Content */}
                     <div className="flex-1">
-                      <h3 className="font-bold text-gray-900 text-lg lg:text-xl mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                      <h3 className="font-bold text-gray-900 text-lg lg:text-xl mb-2 group-hover:text-[#540863] transition-colors duration-300">
                         {feature}
                       </h3>
                       <div className="flex items-center gap-2 text-sm text-gray-500">
-                        <i className="fas fa-check-circle text-[#92487A]"></i>
+                        <i className="fas fa-check-circle text-[#540863]"></i>
                         <span>Included in course</span>
                       </div>
                     </div>
                     
                     {/* Arrow Icon */}
                     <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <i className="fas fa-arrow-right text-[#92487A] text-lg"></i>
+                      <i className="fas fa-arrow-right text-[#540863] text-lg"></i>
                     </div>
                   </div>
                   
                   {/* Progress Bar Effect */}
-                  <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#92487A] to-[#DA6422] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#540863] to-[#92487A] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
               )
             })}
@@ -429,9 +429,9 @@ const CourseInnerpage = () => {
           {/* Additional Info */}
           <div className="mt-12 text-center">
             <div className="inline-flex items-center gap-3 bg-white rounded-full px-6 py-3 shadow-lg border border-gray-100">
-              <i className="fas fa-gift text-[#92487A] text-xl"></i>
+              <i className="fas fa-gift text-[#540863] text-xl"></i>
               <span className="text-gray-700 font-medium">
-                <span className="text-[#92487A] font-bold">Bonus:</span> All features included at no extra cost
+                <span className="text-[#540863] font-bold">Bonus:</span> All features included at no extra cost
               </span>
             </div>
           </div>
@@ -445,7 +445,7 @@ const CourseInnerpage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Admission <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Procedure</span>
+              Admission <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#92487A]">Procedure</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Simple and straightforward enrollment process to get you started quickly
@@ -459,7 +459,7 @@ const CourseInnerpage = () => {
               <div className="relative">
                 <div className="text-center">
                   <div className="relative inline-block mb-6">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
                       1
                     </div>
                     <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -473,9 +473,9 @@ const CourseInnerpage = () => {
                 </div>
                 {/* Connecting Arrow - Desktop Only */}
                 <div className="hidden lg:block absolute top-10 right-0 w-full h-0.5">
-                  <div className="absolute top-0 right-0 w-12 h-0.5 bg-gradient-to-r from-[#92487A] to-[#DA6422]"></div>
+                  <div className="absolute top-0 right-0 w-12 h-0.5 bg-gradient-to-r from-[#540863] to-[#92487A]"></div>
                   <div className="absolute top-0 right-12 w-8 h-8 flex items-center justify-center">
-                    <i className="fas fa-arrow-right text-[#92487A] text-xl"></i>
+                    <i className="fas fa-arrow-right text-[#540863] text-xl"></i>
                   </div>
                 </div>
               </div>
@@ -484,7 +484,7 @@ const CourseInnerpage = () => {
               <div className="relative">
                 <div className="text-center">
                   <div className="relative inline-block mb-6">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
                       2
                     </div>
                   </div>
@@ -495,9 +495,9 @@ const CourseInnerpage = () => {
                 </div>
                 {/* Connecting Arrow - Desktop Only */}
                 <div className="hidden lg:block absolute top-10 right-0 w-full h-0.5">
-                  <div className="absolute top-0 right-0 w-12 h-0.5 bg-gradient-to-r from-[#DA6422] to-[#92487A]"></div>
+                  <div className="absolute top-0 right-0 w-12 h-0.5 bg-gradient-to-r from-[#92487A] to-[#540863]"></div>
                   <div className="absolute top-0 right-12 w-8 h-8 flex items-center justify-center">
-                    <i className="fas fa-arrow-right text-[#DA6422] text-xl"></i>
+                    <i className="fas fa-arrow-right text-[#92487A] text-xl"></i>
                   </div>
                 </div>
               </div>
@@ -506,7 +506,7 @@ const CourseInnerpage = () => {
               <div className="relative">
                 <div className="text-center">
                   <div className="relative inline-block mb-6">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
                       3
                     </div>
                   </div>
@@ -517,9 +517,9 @@ const CourseInnerpage = () => {
                 </div>
                 {/* Connecting Arrow - Desktop Only */}
                 <div className="hidden lg:block absolute top-10 right-0 w-full h-0.5">
-                  <div className="absolute top-0 right-0 w-12 h-0.5 bg-gradient-to-r from-[#92487A] to-[#DA6422]"></div>
+                  <div className="absolute top-0 right-0 w-12 h-0.5 bg-gradient-to-r from-[#540863] to-[#92487A]"></div>
                   <div className="absolute top-0 right-12 w-8 h-8 flex items-center justify-center">
-                    <i className="fas fa-arrow-right text-[#92487A] text-xl"></i>
+                    <i className="fas fa-arrow-right text-[#540863] text-xl"></i>
                   </div>
                 </div>
               </div>
@@ -528,7 +528,7 @@ const CourseInnerpage = () => {
               <div className="relative">
                 <div className="text-center">
                   <div className="relative inline-block mb-6">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center text-white text-2xl font-bold shadow-xl mx-auto">
                       4
                     </div>
                   </div>
@@ -541,24 +541,24 @@ const CourseInnerpage = () => {
             </div>
 
             {/* Additional Information */}
-            <div className="mt-12 bg-gradient-to-br from-[#92487A]/10 to-[#DA6422]/10 rounded-2xl p-8 border-2 border-[#92487A]/20">
+            <div className="mt-12 bg-gradient-to-br from-[#540863]/10 to-[#92487A]/10 rounded-2xl p-8 border-2 border-[#540863]/20">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center text-white">
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center text-white">
                     <i className="fas fa-clock text-xl"></i>
                   </div>
                   <h4 className="font-bold text-gray-900 mb-1">Quick Processing</h4>
                   <p className="text-sm text-gray-600">Admission processed within 24-48 hours</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center text-white">
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center text-white">
                     <i className="fas fa-shield-alt text-xl"></i>
                   </div>
                   <h4 className="font-bold text-gray-900 mb-1">Secure Payment</h4>
                   <p className="text-sm text-gray-600">100% secure and encrypted payment gateway</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center text-white">
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center text-white">
                     <i className="fas fa-headset text-xl"></i>
                   </div>
                   <h4 className="font-bold text-gray-900 mb-1">24/7 Support</h4>
@@ -575,13 +575,13 @@ const CourseInnerpage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Why Choose This <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Course</span>
+              Why Choose This <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#92487A]">Course</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center">
                 <i className="fas fa-certificate text-3xl text-white"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Globally Recognized Certificate</h3>
@@ -589,7 +589,7 @@ const CourseInnerpage = () => {
             </div>
 
             <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center">
                 <i className="fas fa-user-graduate text-3xl text-white"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Instructors</h3>
@@ -597,7 +597,7 @@ const CourseInnerpage = () => {
             </div>
 
             <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center">
                 <i className="fas fa-headset text-3xl text-white"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Lifetime Support</h3>
@@ -610,15 +610,15 @@ const CourseInnerpage = () => {
       {/* Professional Features Section */}
       <section className="py-16 sm:py-20 lg:py-12 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#DA6422] rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-0 w-96 h-96 bg-[#540863] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Our Academy</span>?
+              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#92487A]">Our Academy</span>?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Experience excellence in Vedic and Occult Science education with our comprehensive learning platform
@@ -628,13 +628,13 @@ const CourseInnerpage = () => {
           {/* Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {/* Feature 1 - Professional Certification */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#92487A]/10 to-transparent rounded-bl-full"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#540863]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-certificate text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   Professional Certification
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -644,13 +644,13 @@ const CourseInnerpage = () => {
             </div>
 
             {/* Feature 2 - 100% Live Online Classes */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#DA6422]/10 to-transparent rounded-bl-full"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#92487A]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-video text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   100% Live Online Classes
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -660,13 +660,13 @@ const CourseInnerpage = () => {
             </div>
 
             {/* Feature 3 - 100% Placement Support */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#92487A]/10 to-transparent rounded-bl-full"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#540863]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-briefcase text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   100% Placement Support
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -676,13 +676,13 @@ const CourseInnerpage = () => {
             </div>
 
             {/* Feature 4 - 1 On 1 Mentorship */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#DA6422]/10 to-transparent rounded-bl-full"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#92487A]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-user-graduate text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   1 On 1 Mentorship
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -701,12 +701,12 @@ const CourseInnerpage = () => {
             {/* Left Side - Content */}
             <div>
               <div className="inline-block mb-4">
-                <span className="text-sm font-semibold text-[#92487A] uppercase tracking-wider bg-[#92487A]/10 px-4 py-2 rounded-full">
+                <span className="text-sm font-semibold text-[#540863] uppercase tracking-wider bg-[#540863]/10 px-4 py-2 rounded-full">
                   Most Trusted
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Vedic Astrology <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Course</span>
+                Vedic Astrology <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#92487A]">Course</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Join India's most trusted Vedic Astrology course and learn from expert instructors with years of experience. Get comprehensive training, practical knowledge, and globally recognized certification.
@@ -715,7 +715,7 @@ const CourseInnerpage = () => {
               {/* Key Highlights */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center text-white">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center text-white">
                     <i className="fas fa-check text-sm"></i>
                   </div>
                   <div>
@@ -725,7 +725,7 @@ const CourseInnerpage = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center text-white">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#92487A] to-[#540863] flex items-center justify-center text-white">
                     <i className="fas fa-check text-sm"></i>
                   </div>
                   <div>
@@ -735,7 +735,7 @@ const CourseInnerpage = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center text-white">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#540863] to-[#92487A] flex items-center justify-center text-white">
                     <i className="fas fa-check text-sm"></i>
                   </div>
                   <div>
@@ -751,7 +751,7 @@ const CourseInnerpage = () => {
               <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl border border-gray-100">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-                    Get the Course <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Details</span>
+                    Get the Course <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#92487A]">Details</span>
                   </h3>
                   <p className="text-gray-600">
                     Fill out the form below and we'll send you complete course information
@@ -770,7 +770,7 @@ const CourseInnerpage = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -786,7 +786,7 @@ const CourseInnerpage = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -802,7 +802,7 @@ const CourseInnerpage = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                       placeholder="Enter your phone number"
                     />
                   </div>
@@ -817,14 +817,14 @@ const CourseInnerpage = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="3"
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300 resize-none"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300 resize-none"
                       placeholder="Any questions or specific information you need?"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-[#92487A] to-[#DA6422] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform flex items-center justify-center space-x-2"
+                    className="w-full bg-gradient-to-r from-[#540863] to-[#92487A] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform flex items-center justify-center space-x-2"
                   >
                     <span>Get Course Details</span>
                     <i className="fas fa-arrow-right"></i>
@@ -836,8 +836,176 @@ const CourseInnerpage = () => {
         </div>
       </section>
 
+      {/* Featured On Section */}
+      <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#540863] mb-4" style={{ fontWeight: 600 }}>
+              Featured <span style={{ color: '#540863', fontWeight: 600 }}>On</span>
+            </h2>
+          </div>
+      <section className="py-16 mb-10 sm:py-20 lg:py-16 bg-[#540863] relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#540863] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Heading */}
+          
+
+          {/* Auto-Scrolling Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex gap-6 md:gap-8 overflow-hidden">
+              <div 
+                className="flex gap-6 md:gap-8 animate-scroll"
+                style={{
+                  animation: 'scroll 30s linear infinite',
+                  width: 'fit-content'
+                }}
+              >
+                {/* Featured Media Outlets */}
+                {[
+                  {
+                    name: "Business News This Week",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/03/Business-News-This-Week-_-http___businessnewsthisweek.com_education_academy-of-vedic-vidya-introduces-unique-courses-in-vedic-sciences-for-indian-and-overseas-students-3.webp",
+                    link: "http://businessnewsthisweek.com/education/academy-of-vedic-vidya-introduces-unique-courses-in-vedic-sciences-for-indian-and-overseas-students"
+                  },
+                  {
+                    name: "Women Entrepreneur India",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Women-Entrepreneur-India-_-https___www_womenentrepreneurindia_com_editors-guest-column_dyn.png",
+                    link: "https://www.womenentrepreneurindia.com/editors-guest-column/dyn"
+                  },
+                  {
+                    name: "SugerMint",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/SugerMint-_-https___sugermint_com_diksha-katyal.png",
+                    link: "https://sugermint.com/diksha-katyal"
+                  },
+                  {
+                    name: "APN News",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/APN-News-_-https___www_apnnews_com_academy-of-vedic-vidya-introduces-unique-courses-in-ved.png",
+                    link: "https://www.apnnews.com/academy-of-vedic-vidya-introduces-unique-courses-in-ved"
+                  },
+                  {
+                    name: "Biz News Desk",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Biz-News-Desk-_-https___biznewsdesk_com_education_academy-of-vedic-vidya-introduces-unique.png",
+                    link: "https://biznewsdesk.com/education/academy-of-vedic-vidya-introduces-unique"
+                  },
+                  {
+                    name: "India Education Diary",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/India-Education-Diary-_-https___indiaeducationdiary_in_academy-of-vedic-vidya-introduces-u.png",
+                    link: "https://indiaeducationdiary.in/academy-of-vedic-vidya-introduces-u"
+                  },
+                  {
+                    name: "Dainik Bhaskar UP",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Dainik-Bhaskar-UP-httpsepaper_dainikbhaskarup_commedia2023-0864e423d103b17-noida_s11_jpg-.png",
+                    link: "https://epaper.dainikbhaskarup.com/media/2023-08/64e423d103b17-noida_s11.jpg"
+                  },
+                  {
+                    name: "Diwali Dhamaka Offer",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Diwali-Dhamaka-Offer-_6_.png",
+                    link: "#"
+                  }
+                ].map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] h-[120px] sm:h-[140px] md:h-[150px] flex items-center justify-center bg-white rounded-lg p-3 sm:p-4 hover:shadow-xl transition-all duration-300 border border-gray-100"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      loading="lazy"
+                    />
+                  </a>
+                ))}
+                {/* Duplicate set for seamless infinite scroll */}
+                {[
+                  {
+                    name: "Business News This Week",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/03/Business-News-This-Week-_-http___businessnewsthisweek.com_education_academy-of-vedic-vidya-introduces-unique-courses-in-vedic-sciences-for-indian-and-overseas-students-3.webp",
+                    link: "http://businessnewsthisweek.com/education/academy-of-vedic-vidya-introduces-unique-courses-in-vedic-sciences-for-indian-and-overseas-students"
+                  },
+                  {
+                    name: "Women Entrepreneur India",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Women-Entrepreneur-India-_-https___www_womenentrepreneurindia_com_editors-guest-column_dyn.png",
+                    link: "https://www.womenentrepreneurindia.com/editors-guest-column/dyn"
+                  },
+                  {
+                    name: "SugerMint",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/SugerMint-_-https___sugermint_com_diksha-katyal.png",
+                    link: "https://sugermint.com/diksha-katyal"
+                  },
+                  {
+                    name: "APN News",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/APN-News-_-https___www_apnnews_com_academy-of-vedic-vidya-introduces-unique-courses-in-ved.png",
+                    link: "https://www.apnnews.com/academy-of-vedic-vidya-introduces-unique-courses-in-ved"
+                  },
+                  {
+                    name: "Biz News Desk",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Biz-News-Desk-_-https___biznewsdesk_com_education_academy-of-vedic-vidya-introduces-unique.png",
+                    link: "https://biznewsdesk.com/education/academy-of-vedic-vidya-introduces-unique"
+                  },
+                  {
+                    name: "India Education Diary",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/India-Education-Diary-_-https___indiaeducationdiary_in_academy-of-vedic-vidya-introduces-u.png",
+                    link: "https://indiaeducationdiary.in/academy-of-vedic-vidya-introduces-u"
+                  },
+                  {
+                    name: "Dainik Bhaskar UP",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Dainik-Bhaskar-UP-httpsepaper_dainikbhaskarup_commedia2023-0864e423d103b17-noida_s11_jpg-.png",
+                    link: "https://epaper.dainikbhaskarup.com/media/2023-08/64e423d103b17-noida_s11.jpg"
+                  },
+                  {
+                    name: "Diwali Dhamaka Offer",
+                    image: "https://www.academyofvedicvidya.com/wp-content/uploads/2025/01/Diwali-Dhamaka-Offer-_6_.png",
+                    link: "#"
+                  }
+                ].map((item, index) => (
+                  <a
+                    key={`duplicate-${index}`}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] h-[120px] sm:h-[140px] md:h-[150px] flex items-center justify-center bg-white rounded-lg p-3 sm:p-4 hover:shadow-xl transition-all duration-300 border border-gray-100"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      loading="lazy"
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CSS Animation for Auto-Scroll */}
+        <style>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scroll {
+            animation: scroll 30s linear infinite;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-[#92487A] to-[#DA6422]">
+      {/* <section className="py-16 sm:py-20 bg-gradient-to-br from-[#540863] to-[#92487A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Start Your Journey?
@@ -845,11 +1013,11 @@ const CourseInnerpage = () => {
           <p className="text-xl text-white/90 mb-8">
             Join thousands of students who have transformed their lives through this course
           </p>
-          <button className="bg-white text-[#92487A] px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+          <button className="bg-white text-[#540863] px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
             Enroll Now
           </button>
         </div>
-      </section>
+      </section> */}
 
       <WhatsappIcone />
     </>

@@ -311,7 +311,7 @@ const Home = () => {
               
               {/* Button */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to="/all-courses" className="bg-[#92487A] border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+                <Link to="/all-courses" className="bg-[#540863] border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
                   <span>Explore Courses</span>
                   <i className="fas fa-arrow-right text-white"></i>
                 </Link>
@@ -343,7 +343,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-6 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#92487A]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#540863]">
               Courses Offered
             </h2>
             <p className="text-base pt-3 text-lg max-w-2xl mx-auto">
@@ -354,9 +354,9 @@ const Home = () => {
           {/* Courses Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Course Card 1 */}
-            <div className="bg-[#92487A] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-[#540863] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
               <div className="mb-4">
-                <i className="fas fa-star text-4xl text-primary-blue-400 mb-3"></i>
+                <i className="fas fa-star text-4xl text-white mb-3"></i>
                 <h3 className="text-xl font-semibold text-white mb-2">Vedic Astrology</h3>
                 <p className="text-white/80 text-sm">
                   Master the ancient science of Vedic Astrology and learn to predict life events with precision.
@@ -372,9 +372,9 @@ const Home = () => {
             </div>
 
             {/* Course Card 2 */}
-            <div className="bg-[#92487A] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-[#540863] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
               <div className="mb-4">
-                <i className="fas fa-calculator text-4xl text-primary-green-400 mb-3"></i>
+                <i className="fas fa-calculator text-4xl text-white mb-3"></i>
                 <h3 className="text-xl font-semibold text-white mb-2">Vedic Numerology</h3>
                 <p className="text-white/80 text-sm">
                   Discover the power of numbers and their influence on your life through Vedic Numerology.
@@ -390,9 +390,9 @@ const Home = () => {
             </div>
 
             {/* Course Card 3 */}
-            <div className="bg-[#92487A] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-[#540863] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
               <div className="mb-4">
-                <i className="fas fa-home text-4xl text-primary-blue-400 mb-3"></i>
+                <i className="fas fa-home text-4xl text-white mb-3"></i>
                 <h3 className="text-xl font-semibold text-white mb-2">Vastu Shastra</h3>
                 <p className="text-white/80 text-sm">
                   Learn the art of Vastu Shastra to create harmonious living and working spaces.
@@ -408,9 +408,9 @@ const Home = () => {
             </div>
 
             {/* Course Card 4 */}
-            <div className="bg-[#92487A] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-[#540863] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
               <div className="mb-4">
-                <i className="fas fa-hand-sparkles text-4xl text-primary-green-400 mb-3"></i>
+                <i className="fas fa-hand-sparkles text-4xl text-white mb-3"></i>
                 <h3 className="text-xl font-semibold text-white mb-2">Palmistry</h3>
                 <p className="text-white/80 text-sm">
                   Read palms and understand personality traits, life events, and future predictions.
@@ -426,9 +426,9 @@ const Home = () => {
             </div>
 
             {/* Course Card 5 */}
-            <div className="bg-[#92487A] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-[#540863] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
               <div className="mb-4">
-                <i className="fas fa-gem text-4xl text-primary-blue-400 mb-3"></i>
+                <i className="fas fa-gem text-4xl text-white mb-3"></i>
                 <h3 className="text-xl font-semibold text-white mb-2">Crystal Healing</h3>
                 <p className="text-white/80 text-sm">
                   Harness the healing power of crystals and gemstones for physical and spiritual wellness.
@@ -444,9 +444,9 @@ const Home = () => {
             </div>
 
             {/* Course Card 6 */}
-            <div className="bg-[#92487A] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-[#540863] backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-primary-blue-400 transition-all duration-300 hover:transform hover:scale-105">
               <div className="mb-4">
-                <i className="fas fa-cards text-4xl text-primary-green-400 mb-3"></i>
+                <i className="fas fa-cards text-4xl text-white mb-3"></i>
                 <h3 className="text-xl font-semibold text-white mb-2">Tarot Card Reading</h3>
                 <p className="text-white/80 text-sm">
                   Master the art of Tarot card reading and provide insightful guidance to others.
@@ -481,7 +481,7 @@ const Home = () => {
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-4xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Why Choose Academy of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Astro Radiance Vidhya</span>?
+              Why Choose Academy of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#DA6422]">Astro Radiance Vidhya</span>?
             </h2>
             <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
               We are committed to providing the best learning experience in Vedic and Occult Sciences
@@ -502,7 +502,7 @@ const Home = () => {
                       alt="Education Academy"
                       className="w-full h-full object-cover rounded-2xl group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#92487A]/30 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#540863]/30 to-transparent"></div>
                   </div>
                   
                   {/* Small Image 1 - Bottom Left */}
@@ -522,13 +522,13 @@ const Home = () => {
                       alt="All Courses"
                       className="w-full h-full object-cover rounded-2xl group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#92487A]/30 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#540863]/30 to-transparent"></div>
                   </div>
                 </div>
                 
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#DA6422] rounded-full opacity-20 blur-2xl"></div>
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#92487A] rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#540863] rounded-full opacity-20 blur-2xl"></div>
               </div>
             </div>
 
@@ -538,13 +538,13 @@ const Home = () => {
                 {/* Feature 1 */}
                 <div className="flex items-start gap-6 group">
                   <div className="flex-shrink-0 relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#540863] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
                       <i className="fas fa-certificate text-4xl text-white"></i>
                     </div>
                     <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#DA6422] rounded-full opacity-75 animate-pulse"></div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#540863] transition-colors duration-300">
                       Globally Recognized Certificates
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -556,13 +556,13 @@ const Home = () => {
                 {/* Feature 2 */}
                 <div className="flex items-start gap-6 group">
                   <div className="flex-shrink-0 relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#540863] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
                       <i className="fas fa-chalkboard-teacher text-4xl text-white"></i>
                     </div>
-                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#92487A] rounded-full opacity-75 animate-pulse"></div>
+                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#540863] rounded-full opacity-75 animate-pulse"></div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#540863] transition-colors duration-300">
                       Expert Instructors
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -574,13 +574,13 @@ const Home = () => {
                 {/* Feature 3 */}
                 <div className="flex items-start gap-6 group">
                   <div className="flex-shrink-0 relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#540863] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
                       <i className="fas fa-laptop text-4xl text-white"></i>
                     </div>
                     <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#DA6422] rounded-full opacity-75 animate-pulse"></div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#540863] transition-colors duration-300">
                       Flexible Learning
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -592,13 +592,13 @@ const Home = () => {
                 {/* Feature 4 */}
                 <div className="flex items-start gap-6 group">
                   <div className="flex-shrink-0 relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#540863] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
                       <i className="fas fa-hands-helping text-4xl text-white"></i>
                     </div>
-                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#92487A] rounded-full opacity-75 animate-pulse"></div>
+                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#540863] rounded-full opacity-75 animate-pulse"></div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#92487A] transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#540863] transition-colors duration-300">
                       Lifetime Support
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -610,7 +610,7 @@ const Home = () => {
                 {/* Feature 5 */}
                 {/* <div className="flex items-start gap-6 group">
                   <div className="flex-shrink-0 relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#540863] to-[#DA6422] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
                       <i className="fas fa-book-open text-4xl text-white"></i>
                     </div>
                     <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#DA6422] rounded-full opacity-75 animate-pulse"></div>
@@ -628,10 +628,10 @@ const Home = () => {
                 {/* Feature 6 */}
                 {/* <div className="flex items-start gap-6 group">
                   <div className="flex-shrink-0 relative">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#DA6422] to-[#540863] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
                       <i className="fas fa-users text-4xl text-white"></i>
                     </div>
-                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#92487A] rounded-full opacity-75 animate-pulse"></div>
+                    <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#540863] rounded-full opacity-75 animate-pulse"></div>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#DA6422] transition-colors duration-300">
@@ -651,7 +651,7 @@ const Home = () => {
       {/* Professional Features Section */}
       <section className="py-16 sm:py-20 lg:py-12 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-0 w-96 h-96 bg-[#540863] rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#DA6422] rounded-full blur-3xl"></div>
         </div>
         
@@ -659,7 +659,7 @@ const Home = () => {
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Our Academy</span>?
+              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#DA6422]">Our Academy</span>?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Experience excellence in Vedic and Occult Science education with our comprehensive learning platform
@@ -669,13 +669,13 @@ const Home = () => {
           {/* Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {/* Feature 1 - Certification */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#92487A]/10 to-transparent rounded-bl-full"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#540863]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#540863] to-[#DA6422] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-certificate text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   Certification
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -685,13 +685,13 @@ const Home = () => {
             </div>
 
             {/* Feature 2 - 100% Live Online Classes */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#DA6422]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#540863] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-video text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   100% Live Online Classes
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -701,13 +701,13 @@ const Home = () => {
             </div>
 
             {/* Feature 3 - 100% Placement Support */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#92487A]/10 to-transparent rounded-bl-full"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#540863]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#92487A] to-[#DA6422] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#540863] to-[#DA6422] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-briefcase text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   100% Placement Support
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -717,13 +717,13 @@ const Home = () => {
             </div>
 
             {/* Feature 4 - 1 On 1 Mentorship */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#92487A]/30 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#540863]/30 hover:-translate-y-2">
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#DA6422]/10 to-transparent rounded-bl-full"></div>
               <div className="relative">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#92487A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-[#DA6422] to-[#540863] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-user-graduate text-3xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#92487A] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-[#540863] transition-colors duration-300">
                   1 On 1 Mentorship
                 </h3>
                 <p className="text-gray-600 text-center text-sm leading-relaxed">
@@ -739,7 +739,7 @@ const Home = () => {
       <section className="py-16 sm:py-20 lg:py-12 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#92487A] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#540863] rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#DA6422] rounded-full blur-3xl"></div>
         </div>
         
@@ -747,12 +747,12 @@ const Home = () => {
           {/* Section Header */}
           <div className="text-center  sm:mb-20">
             <div className="inline-block mb-4">
-              <span className="text-sm font-semibold text-[#92487A] uppercase tracking-wider bg-[#92487A]/10 px-4 py-2 rounded-full">
+              <span className="text-sm font-semibold text-[#540863] uppercase tracking-wider bg-[#540863]/10 px-4 py-2 rounded-full">
                 Testimonials
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Students Say</span>
+              What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#DA6422]">Students Say</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Discover how our courses have transformed lives and careers through authentic student experiences
@@ -770,9 +770,9 @@ const Home = () => {
                     course: "Vedic Astrology Student",
                     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
                     review: "The Vedic Astrology course exceeded my expectations. The instructors are knowledgeable and the live sessions are incredibly interactive. I've gained so much confidence in my practice!",
-                    borderColor: "#92487A",
-                    quoteColor: "#92487A",
-                    gradient: "from-[#92487A] to-[#DA6422]"
+                    borderColor: "#540863",
+                    quoteColor: "#540863",
+                    gradient: "from-[#540863] to-[#DA6422]"
                   },
                   {
                     name: "Sneha Kumar",
@@ -781,16 +781,16 @@ const Home = () => {
                     review: "The 1-on-1 mentorship program is outstanding! My mentor helped me understand complex concepts and provided personalized guidance. The placement support team also helped me start my own practice.",
                     borderColor: "#DA6422",
                     quoteColor: "#DA6422",
-                    gradient: "from-[#DA6422] to-[#92487A]"
+                    gradient: "from-[#DA6422] to-[#540863]"
                   },
                   {
                     name: "Amit Mehta",
                     course: "Palmistry Student",
                     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
                     review: "I completed the Palmistry course and received a globally recognized certificate. The live online classes were convenient and the instructors made learning enjoyable. Highly recommended!",
-                    borderColor: "#92487A",
-                    quoteColor: "#92487A",
-                    gradient: "from-[#92487A] to-[#DA6422]"
+                    borderColor: "#540863",
+                    quoteColor: "#540863",
+                    gradient: "from-[#540863] to-[#DA6422]"
                   },
                   {
                     name: "Priya Sharma",
@@ -799,16 +799,16 @@ const Home = () => {
                     review: "The Vastu Shastra course was comprehensive and practical. I learned how to apply these principles in real life. The support team is always available to answer questions.",
                     borderColor: "#DA6422",
                     quoteColor: "#DA6422",
-                    gradient: "from-[#DA6422] to-[#92487A]"
+                    gradient: "from-[#DA6422] to-[#540863]"
                   },
                   {
                     name: "Vikram Khanna",
                     course: "Crystal Healing Student",
                     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
                     review: "Excellent learning experience! The Crystal Healing course opened new doors for me. The certification is recognized internationally, and I've already started my practice successfully.",
-                    borderColor: "#92487A",
-                    quoteColor: "#92487A",
-                    gradient: "from-[#92487A] to-[#DA6422]"
+                    borderColor: "#540863",
+                    quoteColor: "#540863",
+                    gradient: "from-[#540863] to-[#DA6422]"
                   },
                   {
                     name: "Neha Singh",
@@ -817,7 +817,7 @@ const Home = () => {
                     review: "The Tarot Card Reading course is amazing! The live sessions are engaging, and the mentorship program helped me master the art. I'm now a certified practitioner. Thank you!",
                     borderColor: "#DA6422",
                     quoteColor: "#DA6422",
-                    gradient: "from-[#DA6422] to-[#92487A]"
+                    gradient: "from-[#DA6422] to-[#540863]"
                   }
                 ].map((review, index) => {
                   const isActive = currentReview === index
@@ -912,7 +912,7 @@ const Home = () => {
                 onClick={() => {
                   setCurrentReview((prev) => (prev > 0 ? prev - 1 : 5))
                 }}
-                className="group relative w-14 h-14 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
+                className="group relative w-14 h-14 rounded-full bg-gradient-to-br from-[#540863] to-[#DA6422] shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
                 aria-label="Previous review"
               >
                 <i className="fas fa-chevron-left text-lg group-hover:translate-x-[-2px] transition-transform"></i>
@@ -927,7 +927,7 @@ const Home = () => {
                     onClick={() => setCurrentReview(dot)}
                     className={`transition-all duration-300 rounded-full ${
                       currentReview === dot
-                        ? 'w-10 h-3 bg-gradient-to-r from-[#92487A] to-[#DA6422] shadow-md'
+                        ? 'w-10 h-3 bg-gradient-to-r from-[#540863] to-[#DA6422] shadow-md'
                         : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                     }`}
                     aria-label={`Go to review ${dot + 1}`}
@@ -939,7 +939,7 @@ const Home = () => {
                 onClick={() => {
                   setCurrentReview((prev) => (prev < 5 ? prev + 1 : 0))
                 }}
-                className="group relative w-14 h-14 rounded-full bg-gradient-to-br from-[#92487A] to-[#DA6422] shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
+                className="group relative w-14 h-14 rounded-full bg-gradient-to-br from-[#540863] to-[#DA6422] shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110"
                 aria-label="Next review"
               >
                 <i className="fas fa-chevron-right text-lg group-hover:translate-x-[2px] transition-transform"></i>
@@ -953,13 +953,13 @@ const Home = () => {
       {/* Featured On Section */}
       <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontWeight: 600 }}>
-              Featured <span style={{ color: '#92487A', fontWeight: 600 }}>On</span>
+              Featured <span style={{ color: '#540863', fontWeight: 600 }}>On</span>
             </h2>
           </div>
-      <section className="py-16 sm:py-20 lg:py-16  bg-gradient-to-br from-[#92487A] via-[#92487A] to-[#DA6422]  relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-16  bg-gradient-to-br from-[#540863] via-[#540863] to-[#DA6422]  relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#92487A] rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#540863] rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#DA6422] rounded-full blur-3xl"></div>
         </div>
         
@@ -1113,11 +1113,11 @@ const Home = () => {
                     alt="Vedic Science"
                     className="w-full h-full object-cover rounded-2xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#92487A]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#540863]/20 to-transparent"></div>
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#DA6422] rounded-full opacity-20 blur-2xl"></div>
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#92487A] rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#540863] rounded-full opacity-20 blur-2xl"></div>
               </div>
             </div>
 
@@ -1125,7 +1125,7 @@ const Home = () => {
             <div className="order-1 lg:order-2">
                 {/* Main Heading */}
                 <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-3 text-center lg:text-left">
-                Take Your Next Step Towards <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#92487A] to-[#DA6422]">Vedic Science</span>
+                Take Your Next Step Towards <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#540863] to-[#DA6422]">Vedic Science</span>
               </h2>
               <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <p className="text-gray-600 mb-4">
@@ -1145,7 +1145,7 @@ const Home = () => {
                         id="firstName"
                         name="firstName"
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                         placeholder="Enter first name"
                       />
                     </div>
@@ -1160,7 +1160,7 @@ const Home = () => {
                         id="lastName"
                         name="lastName"
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                         placeholder="Enter last name"
                       />
                     </div>
@@ -1178,7 +1178,7 @@ const Home = () => {
                         id="email"
                         name="email"
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -1193,7 +1193,7 @@ const Home = () => {
                         id="phone"
                         name="phone"
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                         placeholder="Enter phone number"
                       />
                     </div>
@@ -1207,7 +1207,7 @@ const Home = () => {
                     <select
                       id="course"
                       name="course"
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300"
                     >
                       <option value="">Select a course</option>
                       <option value="vedic-astrology">Vedic Astrology</option>
@@ -1231,7 +1231,7 @@ const Home = () => {
                       id="message"
                       name="message"
                       rows="4"
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#92487A] focus:outline-none transition-colors duration-300 resize-none"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#540863] focus:outline-none transition-colors duration-300 resize-none"
                       placeholder="Tell us about your interest in Vedic Science..."
                     ></textarea>
                   </div>
@@ -1239,7 +1239,7 @@ const Home = () => {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-[#92487A] to-[#DA6422] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform flex items-center justify-center space-x-2"
+                    className="w-full bg-gradient-to-r from-[#540863] to-[#DA6422] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform flex items-center justify-center space-x-2"
                   >
                     <span>Submit</span>
                     <i className="fas fa-arrow-right text-white"></i>

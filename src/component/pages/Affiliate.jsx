@@ -11,6 +11,7 @@ const Affiliate = () => {
     socialMedia: '',
     experience: '',
     message: ''
+    
   })
   const [openFAQ, setOpenFAQ] = useState(null)
 
